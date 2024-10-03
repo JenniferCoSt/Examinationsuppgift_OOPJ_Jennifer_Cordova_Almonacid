@@ -1,6 +1,7 @@
 public class PalmTree extends Plants {
     //Ärver Plants
 
+    //Nedanför - Enum
     private final WaterType waterType = WaterType.KRANVATTEN;
 
     public PalmTree(String name, double heightInMeters) {
@@ -10,8 +11,8 @@ public class PalmTree extends Plants {
     //Nedanför - Polymorfism
     @Override
     public double wateringNeeds() {
-        double waterNeedPerDay = 0.5;
-        return waterNeedPerDay * getHeightInMeters();
+        double waterNeedInLiter = 0.5;
+        return waterNeedInLiter * getHeightInMeters();
     }
 
     @Override

@@ -20,16 +20,16 @@ public class Huvudprogram {
 
             if (växt != null) {
 
-            boolean plantCheckedIn = false;
-            for (WaterPlants p: checkedInPlants) {
-                if (växt.equalsIgnoreCase(p.toString())) {
-                    JOptionPane.showMessageDialog(null,p.printWateringNeeds());
-                    plantCheckedIn = true;
+                boolean plantCheckedIn = false;
+                for (WaterPlants p : checkedInPlants) {
+                    if (växt.equalsIgnoreCase(p.toString())) {
+                        JOptionPane.showMessageDialog(null, p.printWateringNeeds());
+                        plantCheckedIn = true;
+                    }
                 }
-            }
-            if (!plantCheckedIn) {
-                JOptionPane.showMessageDialog(null, "Växten finns inte incheckad hos oss.");
-            }
+                if (!plantCheckedIn) {
+                    JOptionPane.showMessageDialog(null, "Växten finns inte incheckad hos oss.");
+                }
             } else {
                 JOptionPane.showMessageDialog(null, "Tack för denna gång!");
                 program = false;

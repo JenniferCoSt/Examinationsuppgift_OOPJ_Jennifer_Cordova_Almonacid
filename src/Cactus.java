@@ -1,6 +1,7 @@
 public class Cactus extends Plants {
     //Ärver Plants
 
+    //Nedanför - Enum
     private final WaterType waterType = WaterType.MINERALVATTEN;
 
     public Cactus(String name, double heightInMeters) {
@@ -10,8 +11,8 @@ public class Cactus extends Plants {
     //Nedanför - Polymorfism
     @Override
     public double wateringNeeds() {
-        double waterNeedPerDay = 0.02;
-        return waterNeedPerDay;
+        double waterNeedInLiter = 0.02;
+        return waterNeedInLiter;
     }
 
     @Override

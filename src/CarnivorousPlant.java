@@ -1,6 +1,7 @@
 public class CarnivorousPlant extends Plants {
     //Ärver Plants
 
+    //Nedanför - Enum
     private final WaterType waterType = WaterType.PROTEINDRYCK;
 
     public CarnivorousPlant(String name, double heightInMeters) {
@@ -10,9 +11,9 @@ public class CarnivorousPlant extends Plants {
     //Nedanför - Polymorfism
     @Override
     public double wateringNeeds() {
-        double nutritionNeedPerDay = 0.1;
-        double nutritionPerMeter = 0.2;
-        return (nutritionPerMeter * getHeightInMeters()) + nutritionNeedPerDay;
+        double nutritionNeedInLiter = 0.1;
+        double extraNutritionInLiter = 0.2;
+        return (extraNutritionInLiter * getHeightInMeters()) + nutritionNeedInLiter;
     }
 
     @Override
